@@ -8,7 +8,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 combine = mf.merge_files()
 
 #replace all the turning symbols with point
-combine1 = combine.replace("\n",".")
+combine1 = combine.replace("\n",". ")
 
 sentences = tokenize.sent_tokenize(combine1)
 print(sentences)
